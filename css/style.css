@@ -130,6 +130,44 @@ a:hover{
   display:  none;
   }
 
+#main article{ 
+  }
+  #main article img{
+    max-width: 100%;
+    }
+  #main ul.people{
+    margin: 0;
+    padding: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    }
+    #main ul.people li{
+      float: left;
+      width: 25%;
+      margin-bottom:  20px;
+      list-style: none;
+      }
+      #main ul.people li a{
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 5%;
+        text-decoration: none;
+        }
+      #main ul.people li a:hover{
+        background: rgba(0,0,0,.1)
+        }
+        #main ul.people li a img{
+          display:  block;
+          }
+        #main ul.people li a h4{
+          margin-bottom: 0;
+          font-family: serif; 
+          }
+    
+
+
 
 aside ul{
   padding-left: 0;

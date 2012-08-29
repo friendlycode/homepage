@@ -103,8 +103,9 @@ nav a:hover{
    ========================================================================== */
 
 
-a,
-a:visited
+a:link,
+a:visited,
+a:hover
 {
   color: #666;
   text-decoration: underline;

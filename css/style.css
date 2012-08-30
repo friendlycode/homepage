@@ -15,7 +15,7 @@ body {background: url('/img/cardboard.png'); font-family: 'Helvetica Neue';}
 h1 {font-size: 3em; color: #6b3e03; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);}
 h2 { color: #474033;}
 h3 {color: #474033; font-size: 2.25em;}
-ul li a:hover, a:hover {color: #ff769a;}
+.four ul li a:hover, a:hover {color: #ff769a;}
 .top {margin: 50px auto;}
 .logo {width: 131px; height: 131px;}
 .brigade { color: #6b645e; font-size: 1.5em; font-weight: bold; text-shadow: 0px 1px 0px #ffffff; padding: 5px;}

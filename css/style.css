@@ -25,5 +25,5 @@ h3 {color: #474033; font-size: 2.25em;}
 .footer {width: 100%; float: left; padding: 15px 0px;}
 /*class for each application*/
 .app {margin: 2em 0em;}
-
+.friendlycorps {position: fixed; top: 0;right: 0; }
 

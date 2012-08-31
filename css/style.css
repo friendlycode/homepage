@@ -11,17 +11,17 @@
 ----------------------------------------- */
 
 .container { width: 1000px; max-width: 100%; margin: 0 auto; }
-body {background: url('/img/cardboard.png'); font-family: 'Helvetica Neue';}
-h1 {font-size: 3em; color: #6b3e03; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);}
-h2 { color: #474033;}
-h3 {color: #474033; font-size: 2.25em;}
-.four ul li a:hover, a:hover {color: #ff769a;}
+body {background: url('/img/cardboard.png'); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif}
+h1 {font-size: 3em; color: #6b3e03; text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h2 { color: #474033; font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+h3 {color: #474033; font-size: 2.25em;  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
 .top {margin: 50px auto;}
 .logo {width: 131px; height: 131px;}
 .brigade { color: #6b645e; font-size: 1.5em; font-weight: bold; text-shadow: 0px 1px 0px #ffffff; padding: 5px;}
 .slogan {color: #474033; font-size: 1.5em; background: url('/img/friendlycode.png') no-repeat; padding-left: 151px; height: 131px;display: block;padding-top: 41px; font-size: 1.5em;}
 .four ul li {list-style:none;}
-.four ul li a{font-size: 2em; color: #535749; font-weight: 600; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);}
+.four ul li a{font-size: 2em; color: #535749; font-weight: 600; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";}
+.four ul li a:hover, a:hover {color: #ff769a;}
 .footer {width: 100%; float: left; padding: 15px 0px;}
 /*class for each application*/
 .app {margin: 2em 0em;}

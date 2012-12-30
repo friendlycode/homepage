@@ -1,2 +1,30 @@
-baseurl: /
-exclude: ['CNAME', 'README.md', 'config.rb']
+auto: true
+blah: Hello
+
+brigade:
+    name: Friendly Code
+    city: Grand Rapids
+    meetup-link: "http://www.meetup.com/cfabrigade/Grand-Rapids-MI/"
+    google-group: "https://groups.google.com/forum/?fromgroups#!forum/friendly-code"
+    github: "https://github.com/friendlycode"
+    mailchimp: "http://eepurl.com/ouJJf"
+    facebook: "https://www.facebook.com/friendlycodegr"
+
+content:
+    title: Friendly Code | Grand Rapids Code for America Brigade
+    meetup-invite: "A casual <a href='http://www.meetup.com/cfabrigade/Grand-Rapids-MI/'>meetup</a>, usually bi-weekly."
+    contact: "Our brigade captain is Jonathan Pichot (<a href=\"mailto:pichot@friendlycode.org\">pichot@friendlycode.org</a> or <a href=\"http://twitter.com/jonpichot\">@jonpichot</a>)."
+    banner: ./images/gr-skyline.jpg
+    projects:
+      - name: Viget, a Grand Rapids local wiki
+        content: "<a href='http://viget.org'>Viget</a>, a Grand Rapids local wiki. To contribute to Viget, check out the <a href=\"http://viget.org/Guide\">Getting Started</a> guide."
+
+      - name: GRMade, a directory of Grand Rapids makers
+        content: "<a href='http://grmade.org'>GRMade</a>, a directory of Grand Rapids makers."
+
+      - name: Have an Idea?
+        content: "Have an Idea? <a href='https://groups.google.com/forum/?fromgroups#!forum/friendly-code'>Join our Google Group</a> and share your thoughts."
+
+google-analytics:
+    use: true
+    code: UA-36503439-2

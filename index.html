@@ -1,22 +1,111 @@
 ---
-layout: default
+  locale: "en"
 ---
-<section id="Projects">
-  <h1>Projects</h1>
-  <article class="app">
-    <h2>Viget.org</h2>
-    <p><a href="http://viget.org"><img src="/img/viget.png"></a></p>
-    <p><a href="http://viget.org">Viget.org</a> is a <em>wiki</em>—a website that you can help create. It is designed to help the citizens of Grand Rapids, Michigan define, describe, and imagine their city, its history, and its future. Friendly code has updated Viget.org using <a href="http://localwiki.org">localwiki</a>.</p>
-  </article>
-  <article class="app">
-    <h2>Shareabouts</h2>
-    <p><img src="/img/shareabouts.png"></p>
-    <p>Shareabouts is a mapping tool to gather crowd sourced public input. Use it to collect suggested locations and comments, in a social, engaging process. Try out a demo <a href="http://demo.shareabouts.org">here</a></p>
-  </article>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.content.title }}</title>
+    <meta name="description" content="{{site.meta-description}}">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if site.google-analytics.use %}
+    {% include google-analytics.html %}
+    {% endif %}
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-  <article class="app">
-    <h2>GRMade.org<h2>
-      <a href="http://grmade.org"><img src="/img/grmade.png"></p></a>
-      <p>A project to promote building and making in the city of Grand Rapids, Michigan.</p>
-</section>
+  <body>
 
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">{{ site.brigade.name }}</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                {% include navbar.html %}
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="background" src="{{ site.content.banner }}">
+          <div class="container">
+
+            <div class="carousel-caption">
+              {% include carousel-caption.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        {% include info-columns.html %}
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+      <hr class="featurette-divider">
+      {% include projects.html %}
+
+      <hr class="featurette-divider">
+      {% include help-your-city.html %}
+
+      <hr class="featurette-divider">
+      {% include meetups.html %}
+
+      <hr class="featurette-divider">
+      {% include discussion.html %}
+
+      <hr class="featurette-divider">
+      {% include mailchimp.html %}
+
+      <hr class="featurette-divider">
+      {% include contact.html %}
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        {% include footer.html %}
+      </footer>
+
+    </div><!-- /.container -->
+  </body>
+</html>

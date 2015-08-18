@@ -1,5 +1,5 @@
 #friendlycode.org repo
-Based on the Code for Virginia Beach landing page (http://codeforvirginiabeach.org)
+Based on the Code for Virginia Beach landing page (http://code4hr.org/)
 
 #License
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)

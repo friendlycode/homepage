@@ -35,7 +35,7 @@ build: install
 
 .PHONY: run
 run: install
-	bundle exec jekyll serve --baseurl ""
+	bundle exec jekyll serve
 
 .PHONY: launch
 launch: install

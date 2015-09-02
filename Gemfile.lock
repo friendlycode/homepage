@@ -88,6 +88,3 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll
-
-BUNDLED WITH
-   1.10.6

@@ -1,10 +1,7 @@
-auto: true
-blah: Hello
-
 brigade:
     name: Friendly Code
     city: Grand Rapids
-    meetup-link: "http://www.meetup.com/Friendly-Code"
+    meetup-link: "http://www.meetup.com/friendlycode"
     google-group: "https://groups.google.com/forum/?fromgroups#!forum/friendly-code"
     github: "https://github.com/friendlycode"
     mailchimp: "http://eepurl.com/ouJJf"
@@ -12,7 +9,7 @@ brigade:
 
 content:
     title: Friendly Code | Grand Rapids Code for America Brigade
-    meetup-invite: "A casual <a href='http://www.meetup.com/Friendly-Code'>meetup</a>, usually bi-weekly."
+    meetup-invite: "A casual <a href='http://www.meetup.com/friendlycode'>meetup</a>, usually bi-weekly."
     contact: "Our brigade captain is Jonathan Pichot (<a href=\"mailto:pichot@friendlycode.org\">pichot@friendlycode.org</a> or <a href=\"http://twitter.com/jonpichot\">@jonpichot</a>)."
     banner: ./images/gr-skyline.jpg
     banner-large: "/images/gr-skyline-500-progressive.jpg"

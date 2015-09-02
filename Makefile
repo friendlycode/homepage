@@ -8,16 +8,24 @@ ci: build
 
 # INSTALL ######################################################################
 
-.PHONY: depends
-depends: Gemfile.lock
-Gemfile.lock: Gemfile
+VENDOR_DIR := vendor
+INSTALLED_FLAG := $(VENDOR_DIR)/.installed
+
+.PHONY: install
+install: $(INSTALLED_FLAG)
+$(INSTALLED_FLAG): Gemfile Gemfile.lock Makefile
 	bundle install --path vendor
-	@ touch Gemfile.lock
+	@ touch $(INSTALLED_FLAG)  # indicate that dependencies are installed
+
+.PHONY: update
+update: install
+	bundle update
+	@ touch $(INSTALLED_FLAG)  # indicate that dependencies are installed
 
 # BUILD ########################################################################
 
 .PHONY: build
-build: depends
+build: install
 	bundle exec jekyll build --quiet
 	echo ${URL} > _site/CNAME
 	# TODO: enable this after fixing links
@@ -26,9 +34,16 @@ build: depends
 # RUN ##########################################################################
 
 .PHONY: run
-run: depends
+run: install
 	bundle exec jekyll serve --baseurl ""
 
 .PHONY: launch
-launch: depends
+launch: install
 	eval "sleep 5; open http://localhost:4000" & make run
+
+# CLEAN ########################################################################
+
+.PHONY: clean
+clean:
+	rm -rf .bundle $(VENDOR_DIR)
+	rm -rf _site

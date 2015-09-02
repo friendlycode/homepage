@@ -7,7 +7,7 @@ cache:
   directories:
   - vendor
 before_cache:
-- touch Gemfile  # force gems to refresh
+- rm -rfv vendor/.*  # force gems to refresh
 
 env:
   global:

@@ -20,8 +20,7 @@ Gemfile.lock: Gemfile
 build: depends
 	bundle exec jekyll build --quiet
 	echo ${URL} > _site/CNAME
-	# TODO: enable this after fixing links
-	# bundle exec htmlproof ./_site
+	bundle exec htmlproof _site
 
 # RUN ##########################################################################
 

@@ -19,7 +19,7 @@ branches:
   - gh-pages
 
 install:
-- make depends
+- make install
 
 script:
 - make ci

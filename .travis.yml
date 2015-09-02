@@ -6,6 +6,8 @@ rvm:
 cache:
   directories:
   - vendor
+before_cache:
+- touch Gemfile  # force gems to refresh
 
 env:
   global:
@@ -22,7 +24,7 @@ install:
 script:
 - make ci
 
-after_script: >
+after_success: >
   echo $TRAVIS_BRANCH; echo $TRAVIS_PULL_REQUEST;
   if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
     # Generate HTML

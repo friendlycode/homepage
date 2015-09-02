@@ -5,9 +5,12 @@ all: build
 run: depends
 	bundle exec jekyll serve --baseurl ""
 
+.PHONY: launch
+launch:
+	eval "sleep 5; open http://localhost:4000" & make run
+
 .PHONY: ci
 ci: build
-
 
 .PHONY: build
 build: depends

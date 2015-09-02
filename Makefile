@@ -15,6 +15,7 @@ ci: build
 .PHONY: build
 build: depends
 	bundle exec jekyll build
+	echo "friendlycode.org" > _site/CNAME
 	# TODO: enable this after fixing links
 	# bundle exec htmlproof ./_site
 

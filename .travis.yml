@@ -1,0 +1,36 @@
+language: ruby
+rvm:
+- 2.1
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true  # speeds up installation of html-proofer
+  - secure: "UDM1SACHM7XVf6oG8oFTe2A8Jd5Drsd8HCwMvlOkkeab02KO+0sS9myTRrDicvvEoKB8gNG1u1S74KH43mPScT58qgwYQMDkGl4IkSTyfZPnukbErQGyRoFlL8OY8G33ksjav/O0hnQyhWLtKXcFL/NL0AF0xavzmLBTP6jyi9k="
+
+branches:
+  except:
+  - gh-pages
+
+install:
+- make depends
+
+script:
+- make ci
+
+after_script: >
+  echo $TRAVIS_BRANCH; echo $TRAVIS_PULL_REQUEST;
+  if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then
+    # Generate HTML
+    make build ;
+    # Configure Git with Travis CI information
+    git config --global user.email "travis@travis-ci.org" ;
+    git config --global user.name "travis-ci" ;
+    # Delete the current repository
+    rm -rf .git ;
+    # Rebuild the repository from the generated files and push to GitHub pages
+    cd _site ;
+    git init ;
+    git add . ;
+    git commit -m "Deploy Travis CI build $TRAVIS_BUILD_NUMBER to GitHub pages" ;
+    git push -f https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} master:gh-pages ;
+  fi

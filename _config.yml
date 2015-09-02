@@ -27,6 +27,9 @@ content:
       - name: Have an Idea?
         content: "Have an Idea? <a href='https://groups.google.com/forum/?fromgroups#!forum/friendly-code'>Join our Google Group</a> and share your thoughts."
 
+exclude:
+  - vendor
+
 google-analytics:
     use: true
     code: UA-36503439-2

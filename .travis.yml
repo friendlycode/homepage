@@ -39,3 +39,8 @@ after_script: >
     git commit -m "Deploy Travis CI build $TRAVIS_BUILD_NUMBER to GitHub pages" ;
     git push -f https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG} master:gh-pages ;
   fi
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change

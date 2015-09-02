@@ -16,7 +16,7 @@ build: depends
 	# bundle exec htmlproof ./_site
 
 .PHONY: depends
-depends: vendor
+depends: vendor/*
 vendor/*: Gemfile*
 	bundle install --path vendor
 	@ touch vendor/*

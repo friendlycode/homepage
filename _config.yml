@@ -9,8 +9,8 @@ brigade:
 
 content:
     title: Friendly Code | Grand Rapids Code for America Brigade
-    meetup-invite: "A casual <a href='http://www.meetup.com/friendlycode'>meetup</a>, usually bi-weekly."
-    contact: "Our brigade captain is Jonathan Pichot (<a href=\"mailto:pichot@friendlycode.org\">pichot@friendlycode.org</a> or <a href=\"http://twitter.com/jonpichot\">@jonpichot</a>)."
+    meetup-invite: "A casual <a href='http://www.meetup.com/friendlycode'>meetup</a>, on the first and third Tuesday of every month."
+    contact: "Our brigade captains are Allen Clark (<a href=\"mailto:allen@friendlycode.org\">allen@friendlycode.org</a> or <a href=\"http://twitter.com/ItsMeAllenClark\">@ItsMeAllenClark</a>) and Jean Hanks (<a href=\"mailto:jean@friendlycode.org\">jean@friendlycode.org</a>)."
     banner: "./images/gr-skyline.jpg"
     banner-large: "./images/gr-skyline-500-progressive.jpg"
     banner-small: "./images/gr-skyline-300-progressive.jpg"

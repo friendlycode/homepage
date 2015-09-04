@@ -1,11 +1,18 @@
-#friendlycode.org repo
+# friendlycode.org
+
 Based on the Code for Virginia Beach landing page (http://code4hr.org/)
 
-#License
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://travis-ci.org/friendlycode/homepage.svg?branch=master)](https://travis-ci.org/friendlycode/homepage)
 
-#Attribution and Thanks
-Thank you so much to Code for Virginia Beach for creating the original site this template was based on, especially Bret Fisher.
+## Getting Started
 
-#More options:
-Each element of the page is contained in the '_includes' directory.  You can change individual parts of the landing page if desired or if you're familiar with Jekyll you can make advanced changes.
+### Requirements
+
+* Ruby 2.1.2: `$ rbenv install 2.1.2`
+* Bundler: `$ gem install bundler`
+
+### Running locally
+
+```
+$ make run
+```

@@ -7,6 +7,8 @@ brigade:
     mailchimp: "http://eepurl.com/ouJJf"
     facebook: "https://www.facebook.com/friendlycodegr"
     twitter: "https://twitter.com/friendlycodeGR"
+    slack: "http://friendlycode.slack.com"
+    slack-signup: "http://slackin-friendlycode.herokuapp.com"
 
 content:
     title: Friendly Code | Grand Rapids Code for America Brigade

@@ -21,8 +21,9 @@ content:
       - name: Viget, a Grand Rapids local wiki
         content: "<a href='http://viget.org'>Viget</a>, a Grand Rapids local wiki. To contribute to Viget, check out the <a href=\"http://viget.org/Guide\">Getting Started</a> guide."
 
-      - name: GRMade, a directory of Grand Rapids makers
-        content: "<a href='http://grmade.org'>GRMade</a>, a directory of Grand Rapids makers."
+      # TODO: enable this after https://github.com/friendlycode/grmade/issues/4
+      # - name: GRMade, a directory of Grand Rapids makers
+      #   content: "<a href='http://friendlycode.github.io/grmade'>GRMade</a>, a directory of Grand Rapids makers."
 
       - name: Have an Idea?
         content: "Have an Idea? <a href='https://groups.google.com/forum/?fromgroups#!forum/friendly-code'>Join our Google Group</a> and share your thoughts."

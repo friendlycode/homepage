@@ -29,7 +29,10 @@ content:
         content: "Have an Idea? <a href='https://groups.google.com/forum/?fromgroups#!forum/friendly-code'>Join our Google Group</a> and share your thoughts."
 
 exclude:
-  - vendor
+  - README.md
+  - Makefile
+  - Gemfile*
+  - vendor/
 
 google-analytics:
     use: true

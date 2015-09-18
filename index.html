@@ -35,7 +35,7 @@
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
             <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" href="#" >
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -59,13 +59,13 @@
       <div class="carousel-inner">
         <div class="item active lazy-load" data-src-small="{{ site.content.banner-small }}" data-src-large="{{ site.content.banner-large }}" >
 
-        
+
         <noscript>
           <style type="text/css">
             .lazy-load{
-              background-image:url({{ site.content.banner-small }}); 
-              background-size: cover; 
-              background-position-x: 50%; 
+              background-image:url({{ site.content.banner-small }});
+              background-size: cover;
+              background-position-x: 50%;
               background-repeat-y: no-repeat;
             }
           </style>
@@ -123,7 +123,7 @@
 
     </div><!-- /.container -->
     <script>
-        
+
     LZLD = {};
 
     //get pixel ratio, default to 1
@@ -134,14 +134,14 @@
 
     //get images blocks and loop through them
     LZLD.lazyLoadImages = function(){
-        var lazyloadUs = document.getElementsByClassName("lazy-load");                
-        for(var i = 0; i < lazyloadUs.length; i++){       
+        var lazyloadUs = document.getElementsByClassName("lazy-load");
+        for(var i = 0; i < lazyloadUs.length; i++){
             LZLD.lazyloadImage(lazyloadUs[i]);
         }
     }
 
     LZLD.lazyloadImage = function(lazyLoadMe){
-        
+
         var noscriptTag = lazyLoadMe.children[0];
 
         var imgSRCSmall = lazyLoadMe.getAttribute("data-src-small");

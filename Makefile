@@ -28,8 +28,7 @@ update: install
 build: install
 	bundle exec jekyll build --quiet
 	echo ${URL} > _site/CNAME
-	# TODO: enable this after fixing links
-	# bundle exec htmlproof ./_site
+	bundle exec htmlproof _site --href-ignore "#"
 
 # RUN ##########################################################################
 

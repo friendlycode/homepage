@@ -8,13 +8,13 @@ ci: build
 
 # INSTALL ######################################################################
 
-VENDOR_DIR := vendor
+VENDOR_DIR := ~/.vendor/homepage
 INSTALLED_FLAG := $(VENDOR_DIR)/.installed
 
 .PHONY: install
 install: $(INSTALLED_FLAG)
 $(INSTALLED_FLAG): Gemfile Gemfile.lock Makefile
-	bundle install --path vendor
+	bundle install --path $(VENDOR_DIR)
 	@ touch $(INSTALLED_FLAG)  # indicate that dependencies are installed
 
 .PHONY: update

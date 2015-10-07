@@ -1,7 +1,13 @@
 var GithubRepositoryItem = React.createClass({
   render: function() {
     return (
-      <li>{this.props.repo.name}</li>
+      <li className="project">
+        <div>
+          <h3>{this.props.repo.name}</h3>
+          <p>{this.props.repo.description}</p>
+          <a className="btn" href={this.props.repo.html_url} target="_blank">View on Github</a>
+        </div>
+      </li>
     );
   }
 });
@@ -27,7 +33,7 @@ var GithubRepositoryList = React.createClass({
     return (
       <div>
         <h2>Github Projects</h2>
-        <ul>
+        <ul className="project-list" alignItems="stretch">
           {repos}
         </ul>
       </div>

@@ -15,17 +15,20 @@ INSTALLED_FLAG := $(VENDOR_DIR)/.installed
 install: $(INSTALLED_FLAG)
 $(INSTALLED_FLAG): Gemfile Gemfile.lock Makefile
 	bundle install --path $(VENDOR_DIR)
+	npm install react-tools
 	@ touch $(INSTALLED_FLAG)  # indicate that dependencies are installed
 
 .PHONY: update
 update: install
 	bundle update
+	npm update react-tools
 	@ touch $(INSTALLED_FLAG)  # indicate that dependencies are installed
 
 # BUILD ########################################################################
 
 .PHONY: build
 build: install
+	jsx _src/ dist/js/ --no-cache-dir
 	bundle exec jekyll build --quiet
 	echo ${URL} > _site/CNAME
 	bundle exec htmlproof _site --href-ignore "#"
@@ -46,3 +49,5 @@ launch: install
 clean:
 	rm -rf .bundle $(VENDOR_DIR)
 	rm -rf _site
+	rm -rf node_modules
+	rm -rf dist

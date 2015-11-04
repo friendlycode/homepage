@@ -35,6 +35,7 @@ exclude:
   - Makefile
   - Gemfile*
   - vendor/
+  - node_modules
 
 google-analytics:
     use: true

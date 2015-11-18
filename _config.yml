@@ -20,6 +20,8 @@ content:
     projects:
       - name: Viget
         content: "<a href='http://viget.org'>Viget</a>, a Grand Rapids local wiki. To contribute to Viget, check out the <a href=\"http://viget.org/Guide\">Getting Started</a> guide."
+      - name: Open Data Portal
+        content: The <a href='http://data.grcity.us/'>open data portal</a> for the City of Grand Rapids.
       - name: Parks Millage
         content: A <a href='http://friendlycode.github.io/grparks/'>map of millage dollars</a> drawn on the parks they help fund.
 

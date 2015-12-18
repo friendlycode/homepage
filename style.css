@@ -59,7 +59,36 @@
 
 
 
-    /* CUSTOMIZE THE NAVBAR
+    /* HEADER SOCIAL MEDIA ICONS
+    -------------------------------------------------- */
+    .navbar .social-media-nav {
+      float: right;
+      margin-right: 0;
+      display: none;
+    }
+
+    .navbar .social-media-nav > li > a {
+      padding: 15px;
+    }
+
+    @media (min-width: 980px) {
+      .navbar .social-media-nav {
+        display: block;
+      }
+      .dropdown-menu .social-menu-item {
+        display: none;
+      }
+    }
+
+    .social-media-nav a {
+      color: #fff;
+    }
+    .social-media-nav span {
+      display: none;
+    }
+
+
+    /* CAROUSEL
     -------------------------------------------------- */
 
     /* Carousel base class */

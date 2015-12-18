@@ -10,29 +10,7 @@
   </a>
   <ul class="dropdown-menu">
 
-    <li>
-      <a href="{{ site.brigade.github }}">
-        <i class=icon-wrench icon-white></i>
-        Our Code on GitHub</a>
-    </li>
-
-    <li class="divider"></li>
-
-    <li>
-      <a href="{{ site.brigade.meetup-link }}">
-        <i class=icon-group icon-white></i>
-        Our Events on Meetup</a>
-    </li>
-    <li>
-      <a href="{{ site.brigade.facebook }}">
-        <i class=icon-facebook-sign icon-white></i>
-        Our Facebook Page</a>
-    </li>
-        <li>
-      <a href="{{ site.brigade.twitter }}">
-        <i class=icon-retweet icon-white></i>
-        Our Tweets</a>
-    </li>
+    {% include social-media-nav.html %}
 
     <li class="divider"></li>
 

@@ -1,7 +1,6 @@
 <li class="active"><a href="#">Home</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#meetup">Events</a></li>
-<li><a href="#contact">Contact</a></li>
 
 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
 <li class="dropdown" id="menu1">
@@ -11,32 +10,15 @@
   </a>
   <ul class="dropdown-menu">
 
-    <li>
-      <a href="{{ site.brigade.github }}">
-        <i class=icon-wrench icon-white></i>
-        Our Code on GitHub</a>
-    </li>
+    {% include social-media-nav.html %}
 
     <li class="divider"></li>
 
     <li>
-      <a href="{{ site.brigade.meetup-link }}">
-        <i class=icon-group icon-white></i>
-        Our Events on Meetup</a>
+      <a href="#contact">
+        <i class=icon-envelope icon-white></i>
+        Email Our Brigade Captains</a>
     </li>
-    <li>
-      <a href="{{ site.brigade.facebook }}">
-        <i class=icon-facebook-sign icon-white></i>
-        Our Facebook Page</a>
-    </li>
-        <li>
-      <a href="{{ site.brigade.twitter }}">
-        <i class=icon-retweet icon-white></i>
-        Our Tweets</a>
-    </li>
-
-    <li class="divider"></li>
-
     <li>
       <a href="{{ site.brigade.mailchimp }}">
         <i class=icon-envelope icon-white></i>

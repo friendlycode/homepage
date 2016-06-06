@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Friendly Code | Grand Rapids Code for America Brigade</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome-ie7.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      var pluginUrl = 
+      '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+      _gaq.push(['_setAccount', 'UA-69127535-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" href="#" >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">Friendly Code</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#meetup">Events</a></li>
+
+<!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+<li class="dropdown" id="menu1">
+  <a href="#menu1" class="dropdown-toggle" data-toggle="dropdown">
+    Connect
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+
+    <li>
+  <a href="https://github.com/friendlycode" title="Our Code on GitHub">
+    <i class="icon-github"></i>
+    <span>Our Code on GitHub</span>
+  </a>
+</li>
+
+<li class="divider social-menu-item"></li>
+<li class="social-menu-item">
+  <a href="http://www.meetup.com/friendlycode" title="Our Events on Meetup">
+    <i class="icon-group"></i>
+    <span>Our Events on Meetup</span>
+  </a>
+</li>
+<li class="social-menu-item">
+  <a href="https://www.facebook.com/friendlycodegr" title="Our Facebook Page">
+    <i class="icon-facebook icon-sign"></i>
+    <span>Our Facebook Page</span>
+  </a>
+</li>
+
+
+    <li class="divider"></li>
+
+    <li>
+      <a href="#contact">
+        <i class=icon-envelope icon-white></i>
+        Email Our Brigade Captains</a>
+    </li>
+    <li>
+      <a href="http://eepurl.com/ouJJf">
+        <i class=icon-envelope icon-white></i>
+        Our Mailing List</a>
+    </li>
+    <li>
+      <a href="http://slackin-friendlycode.herokuapp.com">
+      <i class=icon-comment icon-white></i>
+      Join Our Slack Organization</a>
+    </li>
+    <li>
+      <a href="http://friendlycode.slack.com">
+      <i class=icon-comment icon-white></i>
+      Talk With Us On Slack (Join First!)</a>
+    </li>
+  </ul>
+</li>
+
+              </ul>
+            </div><!--/.nav-collapse -->
+
+              <ul class="nav social-media-nav">
+                <li>
+  <a href="https://github.com/friendlycode" title="Our Code on GitHub">
+    <i class="icon-github"></i>
+    <span>Our Code on GitHub</span>
+  </a>
+</li>
+
+<li class="divider social-menu-item"></li>
+<li class="social-menu-item">
+  <a href="http://www.meetup.com/friendlycode" title="Our Events on Meetup">
+    <i class="icon-group"></i>
+    <span>Our Events on Meetup</span>
+  </a>
+</li>
+<li class="social-menu-item">
+  <a href="https://www.facebook.com/friendlycodegr" title="Our Facebook Page">
+    <i class="icon-facebook icon-sign"></i>
+    <span>Our Facebook Page</span>
+  </a>
+</li>
+
+              </ul>
+
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <!-- Carousel
+    ================================================== -->
+    <div class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active lazy-load" data-src-small="./images/gr-skyline-300-progressive.jpg" data-src-large="./images/gr-skyline-500-progressive.jpg" >
+
+
+        <noscript>
+          <style type="text/css">
+            .lazy-load{
+              background-image:url(./images/gr-skyline-300-progressive.jpg);
+              background-size: cover;
+              background-position-x: 50%;
+              background-repeat-y: no-repeat;
+            }
+          </style>
+        </noscript>
+
+          <div class="container">
+
+            <div class="carousel-caption">
+              <h1>We Are Friendly Code</h1>
+<p class="lead">
+	Developers, designers, data geeks, leaders, and idea-makers who volunteer to help Grand Rapids'
+	government and civic organizations increase civic engagement by adopting open web technologies.
+</p>
+<a class="btn btn-large btn-primary"
+href="#meetup">Join Us</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+  <img src="images/captain.png" alt="Be a Captain">
+  <h2>Come To Our Meetups</h2>
+  <p>A casual <a href='http://www.meetup.com/friendlycode'>meetup</a>, on the first and third Tuesday of every month.</p>
+  <p><a class="btn" href="#meetup">View details &raquo;</a></p>
+</div><!-- /.span4 -->
+
+<div class="span4">
+  <img src="images/community.png" alt="Join the Community">
+  <h2>Join Online Discussions</h2>
+  <p><a href="https://groups.google.com/forum/?fromgroups#!forum/friendly-code">
+    An open conversation online</a> about what we're doing now and what's next.</p>
+  <p><a class="btn" href="#groups">View details &raquo;</a></p>
+</div><!-- /.span4 -->
+
+<div class="span4">
+  <img src="images/cfa_logo_greyscale.png" alt="Code for Ameria">
+  <h2>See Our Inspiration</h2>
+  <p><a href="http://codeforamerica.org/">Code for America</a> is the organization that helped inspire
+    many of us that we can change our City.
+  </p>
+  <p><a class="btn" href="#cfa">View details &raquo;</a></p>
+</div><!-- /.span4 -->
+
+      </div><!-- /.row -->
+
+      <!-- START THE FEATURETTES -->
+      <hr class="featurette-divider">
+      <div class="featurette">
+  <img class="featurette-image pull-left" id="projects" src="images/fc-logo.png" alt="Friendly Code">
+  <h2 class="featurette-heading">Works In Progress. <span class="muted">Here Are Some Of Our Current Projects.</span></h2>
+  <p class="lead">
+    <ul class="lead">
+      
+      <li><a href='http://viget.org'>Viget</a>, a Grand Rapids local wiki. To contribute to Viget, check out the <a href="http://viget.org/Guide">Getting Started</a> guide.</li>
+      
+      <li>The <a href='http://data.grcity.us/'>open data portal</a> for the City of Grand Rapids.</li>
+      
+      <li>A <a href='http://friendlycode.github.io/grparks/'>map of millage dollars</a> drawn on the parks they help fund.</li>
+      
+      <li>Want to contribute? Check out <a href="https://waffle.io/friendlycode/projects">our Waffle.io board</a> for a list of open issues.</li>
+      
+    </ul>
+  </p>
+</div>
+
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+  <div id="github-projects"></div>
+</div>
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+  <a href="http://brigade.codeforamerica.org/">
+    <img name="cfa" id="cfa" class="featurette-image pull-right" src="images/cfa_brigade_logo.png" alt="code for america">
+  </a>
+  <h2 class="featurette-heading">Want To Help Your City? <span class="muted">Good, we could use your help.</span></h2>
+  <p class="lead">We are a <a href="http://brigade.codeforamerica.org/">Code for America Brigade</a>,
+    which means we're volunteers that contribute
+    our talents toward improving the way our local governments and community organizations use the web.</p>
+  <p class="lead">Friendly Code and Code for America share a Code of Conduct that applies to our activities, events, and digital forums. We do not tolerate discrimiation or harrassment of any kind. <a href="https://github.com/friendlycode/codeofconduct">Check out our full Code of Conduct.</a></p>
+    <p class="lead">Brigade is about action and you're here because you are someone who takes action.
+    <a href="http://brigade.codeforamerica.org/pages/activities">See what kind of things brigades do</a>, or watch the
+      <a href="https://www.youtube.com/watch?v=n4EhJ898r-k">
+        inspirational TED talk given by Jennifer Pahlka, the founder of Code for America.</a></p>
+</div>
+
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+  <a href="http://www.meetup.com/friendlycode">
+    <img name="meetup" id="meetup" class="featurette-image pull-left" src="images/meetup.jpg" alt="Meetup">
+    </a>
+  <h2 class="featurette-heading">We Meet Often. <span class="muted">Come Join Us.</span></h2>
+  <p class="lead">View our <a href="http://www.meetup.com/friendlycode">
+    Meetup site</a> or check out our <a href="https://www.facebook.com/friendlycodegr">Facebook page</a> for the next location and time. We meet the first and third Tuesday of every month. Some meetings are focused on a specific project, at others we organize our efforts and brainstorm new projects. Our meetups are casual and anyone is welcome to join. Food and drink are often inolved.
+</div>
+
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+<a href="https://groups.google.com/forum/?fromgroups#!forum/friendly-code">
+  <img name="groups" id="groups" class="featurette-image pull-right" src="images/google_groups.png" alt="Google Groups">
+</a>
+<h2 class="featurette-heading">We Discuss Things Online. <span class="muted">Join and Introduce Yourself.</span></h2>
+<p class="lead">
+  Can't make it to a meetup? No problem. We collaborate on projects, ask for help, and post wins
+  to our <a href="https://groups.google.com/forum/?fromgroups#!forum/friendly-code">Friendly Code forum</a> where you can get new posts in email and reply. We welcome anyone to sign-up...you might just see something you're interested in helping with.</p>
+</div>
+
+
+      <hr class="featurette-divider">
+      <div class="featurette">
+  <a href="http://eepurl.com/ouJJf">
+    <img name="meetup" id="meetup" class="featurette-image pull-left" src="images/mailchimp.png" alt="MailChimp">
+    </a>
+  <h2 class="featurette-heading">Intrigued? <span class="muted">Keep In Touch.</span></h2>
+  <p class="lead">Interested in what we're doing, but too busy to get involved just yet? Sign up for our very occasional <a href="http://eepurl.com/ouJJf">email newsletter</a>. You can also follow our progress on <a href="https://www.facebook.com/friendlycodegr">Facebook</a>, We'll be launching new initiatives throughout the year and we'll make sure you know about them and how you can help.
+</div>
+
+
+      <!-- REMOVE CONTACTS --><hr class="featurette-divider">
+      <div class="featurette">
+	<a id="contact" href="#contact"> </a>
+	<h2 class="featurette-heading">Want Even More Info? <span class="muted">Contact Us.</span></h2>
+	<p class="lead"></p>
+</div>
+<!-- /END OF CONTACTS -->
+
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+<p>Photo of the Grand Rapids skyline used with permission from <a href="http://710studio.com/">7:10 Studio</a>.</p>
+<p></p>
+
+      </footer>
+
+    </div><!-- /.container -->
+    <script>
+
+    LZLD = {};
+
+    //get pixel ratio, default to 1
+    LZLD.devicePixelRatio = window.devicePixelRatio || 1;
+
+    //screenwidth * pixelratio
+    LZLD.screenWidth = window.innerWidth * LZLD.devicePixelRatio;
+
+    //get images blocks and loop through them
+    LZLD.lazyLoadImages = function(){
+        var lazyloadUs = document.getElementsByClassName("lazy-load");
+        for(var i = 0; i < lazyloadUs.length; i++){
+            LZLD.lazyloadImage(lazyloadUs[i]);
+        }
+    }
+
+    LZLD.lazyloadImage = function(lazyLoadMe){
+
+        var noscriptTag = lazyLoadMe.children[0];
+
+        var imgSRCSmall = lazyLoadMe.getAttribute("data-src-small");
+        var imgSRCLarge = lazyLoadMe.getAttribute("data-src-large");
+
+        var bstyle1="background-image:url(\""
+        var bstyle2="\"); background-size: cover; background-position-x: 50%; background-repeat-y: no-repeat;"
+
+        if(LZLD.screenWidth < 767){
+            lazyLoadMe.setAttribute("style", bstyle1 + imgSRCSmall + bstyle2);
+        }else{
+            lazyLoadMe.setAttribute("style", bstyle1 + imgSRCLarge + bstyle2);
+        }
+    }
+
+    // do it
+    LZLD.lazyLoadImages();
+    </script>
+    <script src="https://fb.me/react-0.13.3.min.js"></script>
+    <script src="dist/js/github-projects.js"></script>
+  </body>
+</html>

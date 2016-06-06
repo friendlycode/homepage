@@ -6,7 +6,6 @@ brigade:
     github: "https://github.com/friendlycode"
     mailchimp: "http://eepurl.com/ouJJf"
     facebook: "https://www.facebook.com/friendlycodegr"
-    twitter: "https://twitter.com/friendlycodeGR"
     slack: "http://friendlycode.slack.com"
     slack-signup: "http://slackin-friendlycode.herokuapp.com"
 
@@ -24,11 +23,11 @@ content:
         content: The <a href='http://data.grcity.us/'>open data portal</a> for the City of Grand Rapids.
       - name: Parks Millage
         content: A <a href='http://friendlycode.github.io/grparks/'>map of millage dollars</a> drawn on the parks they help fund.
-    
+
       # TODO: enable this after https://github.com/friendlycode/grmade/issues/4
       # - name: GRMade, a directory of Grand Rapids makers
       #   content: "<a href='http://friendlycode.github.io/grmade'>GRMade</a>, a directory of Grand Rapids makers."
-    
+
       - name: Waffle Board
         content: Want to contribute? Check out <a href="https://waffle.io/friendlycode/projects">our Waffle.io board</a> for a list of open issues.
 
